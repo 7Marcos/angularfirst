@@ -1,0 +1,26 @@
+<div class="login_contaniner">
+    <img class="film" src="assets\images\film.png" alt="">
+    <div class="logo">Rotten potatoes</div>
+    <div class="desc">
+        Rotten potatoes, for one, emit an especially strong and awful smell,<br>
+         and should be cleaned
+         as soon as possible<br>
+        for a number of reasons. ... Rotten potatoes, <br>
+        for one, emit an especially strong and awful smell, 
+        and should be  
+    </div>
+  <div class="login-form"> 
+<div class="form-group">  
+    <label for="uname">Username</label>
+    <input type="text" name="uname" class="form-control"[(ngModel)]="username"/>
+  </div>
+  <div class="form-group">  
+    <label for="pword">Password</label>
+    <input type="password" name="pword" class="form-control"[(ngModel)]="password"/>
+  </div> 
+  <div class="btn-container">
+    <div class ="error">{{errorMsg}}</div>
+    <button class="btn btn-dark"(click)="login()">login</button>
+  </div>  
+  </div> 
+</div>
